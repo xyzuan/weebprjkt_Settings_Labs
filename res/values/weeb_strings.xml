@@ -5,4 +5,11 @@
     <!-- Device Codename -->
     <string name="about_device_name">Device</string>
 
+        <!-- SELinux status -->
+    <string name="selinux_status">SELinux status</string>
+    <string name="selinux_status_disabled">Disabled</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+
+
 </resources>
