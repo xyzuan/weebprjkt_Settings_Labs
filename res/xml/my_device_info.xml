@@ -28,6 +28,11 @@
         android:selectable="false"
         settings:isPreferenceVisible="false"/>
 
+    <!-- Weeb devices phone -->
+    <PreferenceScreen
+        android:key="weeb_device_phone" 
+        android:layout="@layout/weeb_device_phone"/>
+
     <!-- Device name -->
     <com.android.settings.widget.ValidatedEditTextPreference
         android:key="device_name"
