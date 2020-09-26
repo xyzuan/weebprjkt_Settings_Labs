@@ -21,6 +21,19 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+    <!-- Weeb banner -->
+    <PreferenceScreen
+        android:key="weeb_banner" 
+        android:layout="@layout/banner"/>
+
+    <!-- Weeb version -->
+    <Preference
+        android:key="weeb_version"
+        android:title="@string/weeb_version"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.WeebVersionPreferenceController"/>
+
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
@@ -37,14 +50,6 @@
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.AboutDeviceNamePreferenceController"/>
-
-    <!-- Weeb version -->
-    <Preference
-        android:key="weeb_version"
-        android:title="@string/weeb_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.WeebVersionPreferenceController"/>
 
     <!-- Security patch -->
     <Preference
