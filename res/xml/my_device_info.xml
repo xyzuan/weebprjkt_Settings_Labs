@@ -45,6 +45,32 @@
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.BrandedAccountPreferenceController"/>
 
+    <!-- Model & hardware -->
+    <Preference
+        android:key="device_model"
+        android:order="3"
+        android:title="@string/hardware_info"
+        android:summary="@string/summary_placeholder"
+        android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
+        settings:enableCopying="true"
+        settings:keywords="@string/keywords_model_and_hardware"
+        settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
+
+    <!-- Firmware information -->
+    <Preference
+        android:key="firmware_version"
+        android:order="4"
+        android:title="@string/firmware_information"
+        android:summary="@string/firmware_information_summary"
+        android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"/>
+
+    <Preference
+        android:key="emergency_info"
+        android:order="5"
+        android:title="@string/emergency_info_title"
+        android:summary="@string/summary_placeholder"
+        settings:controller="com.android.settings.accounts.EmergencyInfoPreferenceController"/>
+
     <!-- Phone number
     <Preference
         android:key="phone_number"
@@ -55,20 +81,12 @@
         settings:controller="com.android.settings.deviceinfo.PhoneNumberPreferenceController"
         settings:enableCopying="true"/> -->
 
-    <Preference
-        android:key="emergency_info"
-        android:order="14"
-        android:title="@string/emergency_info_title"
-        android:summary="@string/summary_placeholder"
-        settings:controller="com.android.settings.accounts.EmergencyInfoPreferenceController"/>
-
     <!-- Legal information -->
     <Preference
         android:key="legal_container"
         android:order="15"
         android:title="@string/legal_information"
-        android:fragment="com.android.settings.LegalSettings"
-        settings:allowDividerAbove="true"/>
+        android:fragment="com.android.settings.LegalSettings"/>
 
     <!-- Regulatory labels -->
     <Preference
@@ -96,17 +114,6 @@
         settings:enableCopying="true"
         settings:allowDividerAbove="true"/>
 
-    <!-- Model & hardware -->
-    <Preference
-        android:key="device_model"
-        android:order="31"
-        android:title="@string/hardware_info"
-        android:summary="@string/summary_placeholder"
-        android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
-        settings:enableCopying="true"
-        settings:keywords="@string/keywords_model_and_hardware"
-        settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
-
     <!-- IMEI -->
     <Preference
         android:key="imei_info"
@@ -116,15 +123,6 @@
         settings:keywords="@string/keywords_imei_info"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController"/>
-
-    <!-- Android version -->
-    <Preference
-        android:key="firmware_version"
-        android:order="42"
-        android:title="@string/firmware_version"
-        android:summary="@string/summary_placeholder"
-        android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
 
     <!--IP address -->
     <Preference

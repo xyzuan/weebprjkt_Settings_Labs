@@ -5,14 +5,17 @@
     <!-- Device Codename -->
     <string name="about_device_name">Device</string>
 
-        <!-- SELinux status -->
+    <!-- Firmware Information -->
+    <string name="firmware_information">Firmware information</string>
+    <string name="firmware_information_summary">Information about system firmware</string>
+
+    <!-- SELinux status -->
     <string name="selinux_status">SELinux status</string>
     <string name="selinux_status_disabled">Disabled</string>
     <string name="selinux_status_permissive">Permissive</string>
     <string name="selinux_status_enforcing">Enforcing</string>
 
-       <!-- Streak version -->
+    <!-- Streak version -->
     <string name="weeb_version">WeebProjekt version</string>
-
 
 </resources>
